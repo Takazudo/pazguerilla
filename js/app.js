@@ -113,6 +113,16 @@
         }
         return day.today = true;
       });
+      _.each(data, function(day, i) {
+        var type;
+        type = day[6];
+        switch (type) {
+          case 'M':
+            return day[6] = 'ﾒﾀﾄﾞﾗ';
+          case 'G':
+            return day[6] = 'ｺﾞﾙﾄﾞﾗ';
+        }
+      });
       this.set('days', data);
       return this;
     };

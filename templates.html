@@ -1,5 +1,16 @@
 table {{{
 	<table>
+		<thead>
+			<tr>
+				<th>&nbsp;</th>
+				<td data-group="A">A</td>
+				<td data-group="B">B</td>
+				<td data-group="C">C</td>
+				<td data-group="D">D</td>
+				<td data-group="E">E</td>
+				<td class="type">&nbsp;</td>
+			</tr>
+		</thead>
 		<tbody>
 			<% _(days).each(function(day, i){ %>
 				<tr<% if(day.today){ %> class="today"<% } %>>

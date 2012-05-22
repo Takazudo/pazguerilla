@@ -79,9 +79,19 @@ class Guerilla extends Backbone.Model
       , =>
         @trigger 'error'
   _handleFetchedData: (data) ->
+    
+    # handle today
     _.each data, (day, i) ->
       return unless isToday day[0]
       day.today = true
+
+    # convert M,G
+    _.each data, (day, i) ->
+      type = day[6]
+      switch type
+        when 'M' then day[6] = 'ﾒﾀﾄﾞﾗ'
+        when 'G' then day[6] = 'ｺﾞﾙﾄﾞﾗ'
+
     @set 'days', data
     @
 

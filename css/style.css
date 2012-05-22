@@ -35,3 +35,33 @@ tr.today td.active {
 	background:#B61717;
 	color:#fff;
 }
+thead th {
+	border-top:none;
+	border-left:none;
+	background:#fff;
+}
+thead td {
+	color:#eee;
+	background:#262626;
+	font-weight:bold;
+}
+thead td.active {
+	color:#fff;
+	background:#000;
+}
+thead td.type {
+	background:#fff;
+	border-right:none;
+	border-top:none;
+	border-bottom:none;
+}
+tbody td.type {
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	white-space:nowrap;
+	width:1px;
+	padding-right:4px;
+	padding-left:4px;
+	font-size:.8em;
+}
