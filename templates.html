@@ -1,0 +1,23 @@
+table {{{
+	<table>
+		<tbody>
+			<% _(days).each(function(day, i){ %>
+				<tr<% if(day.today){ %> class="today"<% } %>>
+					<th class="date"><%- day[0] %></th>
+					<td class="group" data-group="A"><%- day[1] %></td>
+					<td class="group" data-group="B"><%- day[2] %></td>
+					<td class="group" data-group="C"><%- day[3] %></td>
+					<td class="group" data-group="D"><%- day[4] %></td>
+					<td class="group" data-group="E"><%- day[5] %></td>
+					<td class="type"><%- day[6] %></td>
+				</tr>
+			<% }); %>
+			<tr>
+		</tbody>
+	</table>
+}}}
+
+error {{{
+	<div>API ERROR!</div>
+}}}
+

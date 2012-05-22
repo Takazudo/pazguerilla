@@ -1,0 +1,37 @@
+* {
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+body {
+	padding:5px;
+}
+table {
+	width:100%;
+	border-collapse:collapse;
+}
+th,td {
+	border:1px solid #000;
+	text-align:center;
+	padding:4px 0;
+}
+th {
+	background:#262626;
+	color:#fff;
+}
+td {
+	cursor:pointer;
+}
+td.active {
+	background:#E3DDBF;
+}
+tr.today th {
+	background:#000;
+}
+tr.today td {
+	background:#ddd;
+}
+tr.today td.active {
+	background:#B61717;
+	color:#fff;
+}
